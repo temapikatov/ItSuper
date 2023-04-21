@@ -44,3 +44,11 @@ class Task:
         task_board = self.element.get_task_board()
         if task_board:
             task_board.remove_task(self)
+
+class Priority:
+    def __init__(self, level):
+        self.level = level
+
+    LOW = Priority("Low")
+    MEDIUM = Priority("Medium")
+    HIGH = Priority("High")
